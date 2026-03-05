@@ -17,10 +17,10 @@ export default function HomePage() {
           <p className="mt-2 text-xl text-slate-700 dark:text-slate-200">{profile.title}</p>
           <p className="mt-4 max-w-3xl text-slate-600 dark:text-slate-300">{profile.summary}</p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a href={`mailto:${profile.email}`} className="rounded-md bg-brand-600 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700">Email</a>
-            <a href={`https://linkedin.com/in/${profile.linkedin}`} className="rounded-md border border-slate-300 px-4 py-2 text-sm font-semibold hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800">LinkedIn</a>
-            <a href={`https://github.com/${profile.github}`} className="rounded-md border border-slate-300 px-4 py-2 text-sm font-semibold hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800">GitHub</a>
-            <a href="/Hafis-Abdul-Rasak-CV.pdf" className="rounded-md border border-brand-600 px-4 py-2 text-sm font-semibold text-brand-700 hover:bg-brand-50 dark:text-brand-50 dark:hover:bg-brand-700/20" download>
+            <a href={`mailto:${profile.email}`} className="rounded-md bg-brand-600/90 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-brand-900/20 backdrop-blur-xl transition hover:bg-brand-700/90">Email</a>
+            <a href={`https://linkedin.com/in/${profile.linkedin}`} className="glass-button rounded-md px-4 py-2 text-sm font-semibold">LinkedIn</a>
+            <a href={`https://github.com/${profile.github}`} className="glass-button rounded-md px-4 py-2 text-sm font-semibold">GitHub</a>
+            <a href="/Hafis-Abdul-Rasak-CV.pdf" className="rounded-md border border-brand-400/60 bg-brand-50/40 px-4 py-2 text-sm font-semibold text-brand-700 backdrop-blur-xl transition hover:bg-brand-100/50 dark:border-brand-300/30 dark:bg-brand-700/20 dark:text-brand-50 dark:hover:bg-brand-700/35" download>
               Download CV
             </a>
           </div>
@@ -121,9 +121,9 @@ export default function HomePage() {
 
       <Section id="contact" title="Contact">
         <div className="flex flex-wrap gap-3">
-          <a href={`mailto:${profile.email}`} className="rounded-md bg-brand-600 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700">Email</a>
-          <a href={`https://linkedin.com/in/${profile.linkedin}`} className="rounded-md border border-slate-300 px-4 py-2 text-sm font-semibold hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800">LinkedIn</a>
-          <a href={`https://github.com/${profile.github}`} className="rounded-md border border-slate-300 px-4 py-2 text-sm font-semibold hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800">GitHub</a>
+          <a href={`mailto:${profile.email}`} className="rounded-md bg-brand-600/90 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-brand-900/20 backdrop-blur-xl transition hover:bg-brand-700/90">Email</a>
+          <a href={`https://linkedin.com/in/${profile.linkedin}`} className="glass-button rounded-md px-4 py-2 text-sm font-semibold">LinkedIn</a>
+          <a href={`https://github.com/${profile.github}`} className="glass-button rounded-md px-4 py-2 text-sm font-semibold">GitHub</a>
         </div>
       </Section>
     </>

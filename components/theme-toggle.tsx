@@ -22,17 +22,25 @@ export function ThemeToggle() {
   };
 
   if (!mounted) {
-    return <div className="h-9 w-20 rounded-md border border-slate-300 dark:border-slate-700" />;
+    return <div className="glass-button h-9 w-20 rounded-full" />;
   }
 
   return (
     <button
       type="button"
       onClick={toggleTheme}
-      className="rounded-md border border-slate-300 px-3 py-2 text-sm font-medium hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600 dark:border-slate-700 dark:hover:bg-slate-800"
+      className="glass-button relative inline-flex h-9 w-20 items-center rounded-full px-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
       aria-label="Toggle light and dark mode"
+      aria-pressed={isDark}
     >
-      {isDark ? 'Light' : 'Dark'} mode
+      <span
+        className={`absolute h-7 w-7 rounded-full bg-white/75 shadow transition-transform duration-300 dark:bg-slate-100/80 ${
+          isDark ? 'translate-x-10' : 'translate-x-0'
+        }`}
+        aria-hidden="true"
+      />
+      <span className="relative z-10 w-1/2 text-center text-xs font-semibold">☀️</span>
+      <span className="relative z-10 w-1/2 text-center text-xs font-semibold">🌙</span>
     </button>
   );
 }
