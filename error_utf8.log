@@ -1,0 +1,52 @@
+﻿
+> hafis-portfolio@1.0.0 dev
+> next dev
+
+node.exe : C:\Users\Administr
+ator\Desktop\RND projects\haf
+is-abdul-rasak\node_modules\n
+ext\dist\server\config.js:787
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (C:\User  
+  s\Admini...r\config.js:7   
+ 87:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+            throw new 
+Error(`Configuring Next.js 
+via '${(0, 
+_path.basename)(nonJsPath)}' 
+is not supported. Please 
+replace the file with 
+'next.config.js' or 
+'next.config.mjs'.`);
+                  ^
+
+Error: Configuring Next.js 
+via 'next.config.ts' is not 
+supported. Please replace 
+the file with 
+'next.config.js' or 
+'next.config.mjs'.
+    at loadConfig (C:\Users\A
+dministrator\Desktop\RND proj
+ects\hafis-abdul-rasak\node_m
+odules\next\dist\server\confi
+g.js:787:19)
+    at async Module.nextDev (
+C:\Users\Administrator\Deskto
+p\RND projects\hafis-abdul-ra
+sak\node_modules\next\dist\cl
+i\next-dev.js:175:14)
+
+Node.js v24.14.0
