@@ -69,7 +69,7 @@ export const profile: Profile = {
   github: 'hafisabdulrasak',
   linkedin: 'hafisabdulrasak123',
   summary:
-    'Senior Techno-Functional Consultant with 7+ years of experience delivering ERP transformations, integration programs, and data-driven solutions. Proven success in Odoo migrations, e-commerce and finance integrations, BI enablement, and cross-functional team leadership across UAE business environments.',
+    'Senior Techno-Functional Consultant with 7+ years of experience delivering ERP transformations, integration programs, and data-driven solutions. Proven success across 30+ Odoo implementations, migrations, e-commerce and finance integrations, BI enablement, and cross-functional team leadership across UAE business environments.',
   about:
     'I specialize in aligning business objectives with scalable technology solutions. My work spans end-to-end Odoo implementation, operational process optimization, API-led integrations, analytics, and stakeholder enablement. I focus on measurable outcomes, sustainable architecture, and high adoption across operations, finance, and sales teams.',
   skills: [
@@ -89,6 +89,7 @@ export const profile: Profile = {
       tags: ['Odoo', 'BI', 'Integration', 'E-commerce', 'Automation'],
       highlights: [
         'Led Odoo migrations from v15→v16 and v16→v18 with process continuity and minimal downtime.',
+        'Delivered 30+ ERP/Odoo implementations across distribution, retail, and operations-led business environments.',
         'Managed Odoo.sh deployments, release governance, and production support workflows.',
         'Delivered BI integrations and executive dashboards to improve operational visibility.',
         'Integrated Shopify, Magento, and Amazon channels with ERP workflows for unified operations.',
@@ -172,7 +173,7 @@ export const profile: Profile = {
     {
       name: 'Odoo ERP Implementation for UAE Companies',
       period: '2022–2025',
-      description: 'Multi-client ERP implementation engagements covering finance, inventory, sales, and operations.',
+      description: 'Delivered 30+ multi-client ERP implementation engagements covering finance, inventory, sales, and operations.',
       tags: ['Odoo', 'ERP', 'Integration'],
     },
     {
