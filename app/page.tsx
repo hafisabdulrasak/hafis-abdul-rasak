@@ -7,6 +7,11 @@ import { profile } from '@/data/profile';
 export default function HomePage() {
   const topExperience = profile.experience.slice(0, 3);
   const featuredProjects = profile.projects.slice(0, 3);
+  const realTestimonials = profile.testimonials.filter((t) => !t.placeholder);
+  const selectedResults = profile.experience
+    .flatMap((experience) => experience.highlights)
+    .filter((highlight) => /(improve|reduc|increase|minimal downtime|faster|accuracy|reliable|optimiz|automation|reconciliation)/i.test(highlight))
+    .slice(0, 4);
 
   return (
     <>
@@ -107,17 +112,29 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section id="testimonials" title="Testimonials" description="Placeholder entries to be replaced with real client feedback.">
-        <div className="grid gap-4 sm:grid-cols-2">
-          {profile.testimonials.map((testimonial) => (
-            <Card key={testimonial.name}>
-              <p className="text-sm italic text-slate-700 dark:text-slate-300">“{testimonial.quote}”</p>
-              <p className="mt-3 text-sm font-semibold">{testimonial.name}</p>
-              <p className="text-xs text-slate-500 dark:text-slate-400">{testimonial.role} {testimonial.placeholder ? '(Placeholder)' : ''}</p>
-            </Card>
-          ))}
-        </div>
-      </Section>
+      {realTestimonials.length > 0 ? (
+        <Section id="testimonials" title="Testimonials">
+          <div className="grid gap-4 sm:grid-cols-2">
+            {realTestimonials.map((testimonial) => (
+              <Card key={testimonial.name}>
+                <p className="text-sm italic text-slate-700 dark:text-slate-300">“{testimonial.quote}”</p>
+                <p className="mt-3 text-sm font-semibold">{testimonial.name}</p>
+                <p className="text-xs text-slate-500 dark:text-slate-400">{testimonial.role}</p>
+              </Card>
+            ))}
+          </div>
+        </Section>
+      ) : (
+        <Section id="selected-results" title="Selected Results">
+          <Card>
+            <ul className="list-disc space-y-2 pl-5 text-sm text-slate-700 dark:text-slate-300">
+              {selectedResults.map((result) => (
+                <li key={result}>{result}</li>
+              ))}
+            </ul>
+          </Card>
+        </Section>
+      )}
 
       <Section id="contact" title="Contact">
         <div className="flex flex-wrap gap-3">

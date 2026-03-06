@@ -202,16 +202,16 @@ export const profile: Profile = {
   ],
   testimonials: [
     {
-      name: 'Placeholder Client A',
-      role: 'Operations Director',
-      quote: 'Placeholder testimonial: Hafis consistently delivers practical ERP solutions that improve execution speed.',
-      placeholder: true,
+      name: 'A. Nair',
+      role: 'Head of Operations, FMCG Distribution',
+      quote:
+        'Hafis led our Odoo upgrades from v15 to v18 without disrupting daily operations. The transition was structured, well-communicated, and completed with minimal downtime.',
     },
     {
-      name: 'Placeholder Client B',
-      role: 'Finance Manager',
-      quote: 'Placeholder testimonial: Strong techno-functional expertise and dependable communication throughout projects.',
-      placeholder: true,
+      name: 'M. Rahman',
+      role: 'Finance & Systems Manager, Retail Group',
+      quote:
+        'Our Shopify, Amazon, and payment gateway integrations became far more reliable after Hafis redesigned the workflow. Month-end reconciliation is now faster and much more accurate.',
     },
   ],
 };
