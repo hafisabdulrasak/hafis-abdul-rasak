@@ -10,7 +10,7 @@ const links = [
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/45 bg-white/35 shadow-lg shadow-slate-900/5 backdrop-blur-2xl dark:border-white/10 dark:bg-slate-950/40 dark:shadow-black/20 liquid-sheen">
+    <header className="sticky top-0 z-50 border-b border-white/45 bg-white/35 shadow-lg shadow-slate-900/5 backdrop-blur-2xl dark:border-white/10 dark:bg-slate-950/40 dark:shadow-black/20">
       <nav className="container-shell flex flex-col gap-3 py-3 sm:flex-row sm:items-center sm:justify-between" aria-label="Main navigation">
         <Link href="/" className="w-full rounded-md px-2 py-1 text-sm font-semibold leading-tight tracking-tight transition hover:bg-white/45 sm:w-auto sm:text-base dark:hover:bg-slate-900/45">
           Hafis Abdul Rasak
