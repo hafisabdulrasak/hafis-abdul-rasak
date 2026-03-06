@@ -10,9 +10,9 @@ const links = [
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/40 bg-white/35 backdrop-blur-2xl dark:border-white/10 dark:bg-slate-950/35">
+    <header className="sticky top-0 z-50 border-b border-white/45 bg-white/35 shadow-lg shadow-slate-900/5 backdrop-blur-2xl dark:border-white/10 dark:bg-slate-950/40 dark:shadow-black/20">
       <nav className="container-shell flex items-center justify-between py-3" aria-label="Main navigation">
-        <Link href="/" className="rounded-md px-2 py-1 text-base font-semibold tracking-tight transition hover:bg-white/35 dark:hover:bg-slate-900/45">
+        <Link href="/" className="rounded-md px-2 py-1 text-base font-semibold tracking-tight transition hover:bg-white/45 dark:hover:bg-slate-900/45">
           Hafis Abdul Rasak
         </Link>
         <div className="flex items-center gap-2 sm:gap-4">
