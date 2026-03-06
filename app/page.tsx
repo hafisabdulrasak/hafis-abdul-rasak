@@ -11,19 +11,45 @@ export default function HomePage() {
   return (
     <>
       <section className="section">
-        <div className="container-shell">
-          <p className="text-sm font-medium text-brand-700 dark:text-brand-50">{profile.location}</p>
-          <h1 className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">{profile.name}</h1>
-          <p className="mt-2 text-xl text-slate-700 dark:text-slate-200">{profile.title}</p>
-          <p className="mt-4 max-w-3xl text-slate-600 dark:text-slate-300">{profile.summary}</p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <a href={`mailto:${profile.email}`} className="rounded-md bg-brand-600/90 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-brand-900/20 backdrop-blur-xl transition hover:bg-brand-700/90">Email</a>
-            <a href={`https://linkedin.com/in/${profile.linkedin}`} className="glass-button rounded-md px-4 py-2 text-sm font-semibold">LinkedIn</a>
-            <a href={`https://github.com/${profile.github}`} className="glass-button rounded-md px-4 py-2 text-sm font-semibold">GitHub</a>
-            <a href="/Hafis-Abdul-Rasak-CV.pdf" className="rounded-md border border-brand-400/60 bg-brand-50/40 px-4 py-2 text-sm font-semibold text-brand-700 backdrop-blur-xl transition hover:bg-brand-100/50 dark:border-brand-300/30 dark:bg-brand-700/20 dark:text-brand-50 dark:hover:bg-brand-700/35" download>
-              Download CV
-            </a>
+        <div className="container-shell lg:grid lg:grid-cols-2 lg:items-start lg:gap-8">
+          <div>
+            <p className="text-sm font-medium text-brand-700 dark:text-brand-50">{profile.location}</p>
+            <h1 className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">{profile.name}</h1>
+            <p className="mt-2 text-xl text-slate-700 dark:text-slate-200">{profile.title}</p>
+            <p className="mt-4 max-w-3xl text-slate-600 dark:text-slate-300">{profile.summary}</p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <span className="accent-chip">7+ years</span>
+              <span className="accent-chip">Odoo v15→v18 migrations</span>
+              <span className="accent-chip">Dubai, UAE</span>
+            </div>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a href={`mailto:${profile.email}`} className="rounded-md bg-brand-600/90 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-brand-900/20 backdrop-blur-xl transition hover:bg-brand-700/90">Email</a>
+              <a href={`https://linkedin.com/in/${profile.linkedin}`} className="glass-button rounded-md px-4 py-2 text-sm font-semibold">LinkedIn</a>
+              <a href={`https://github.com/${profile.github}`} className="glass-button rounded-md px-4 py-2 text-sm font-semibold">GitHub</a>
+              <a href="/Hafis-Abdul-Rasak-CV.pdf" className="rounded-md border border-brand-400/60 bg-brand-50/40 px-4 py-2 text-sm font-semibold text-brand-700 backdrop-blur-xl transition hover:bg-brand-100/50 dark:border-brand-300/30 dark:bg-brand-700/20 dark:text-brand-50 dark:hover:bg-brand-700/35" download>
+                Download CV
+              </a>
+            </div>
           </div>
+
+          <Card>
+            <p className="text-xs font-semibold uppercase tracking-wide text-brand-700 dark:text-brand-100">Key Outcomes</p>
+            <h2 className="mt-2 text-2xl font-semibold">Measurable Delivery</h2>
+            <div className="mt-5 grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
+              <div className="rounded-xl border border-white/50 bg-white/30 p-4 backdrop-blur-xl dark:border-white/10 dark:bg-slate-900/30">
+                <p className="text-2xl font-bold text-brand-700 dark:text-brand-100">7+ yrs</p>
+                <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">ERP transformation experience</p>
+              </div>
+              <div className="rounded-xl border border-white/50 bg-white/30 p-4 backdrop-blur-xl dark:border-white/10 dark:bg-slate-900/30">
+                <p className="text-2xl font-bold text-brand-700 dark:text-brand-100">2 major</p>
+                <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">Odoo migrations (v15→v16→v18)</p>
+              </div>
+              <div className="rounded-xl border border-white/50 bg-white/30 p-4 backdrop-blur-xl dark:border-white/10 dark:bg-slate-900/30">
+                <p className="text-2xl font-bold text-brand-700 dark:text-brand-100">3 channels</p>
+                <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">E-commerce integrations delivered</p>
+              </div>
+            </div>
+          </Card>
         </div>
       </section>
 
