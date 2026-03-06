@@ -50,8 +50,8 @@ export default function HomePage() {
                 <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">Odoo migrations (v15→v16→v18)</p>
               </div>
               <div className="glass-subpanel">
-                <p className="text-2xl font-bold text-brand-700 dark:text-brand-100">3 channels</p>
-                <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">E-commerce integrations delivered</p>
+                <p className="text-2xl font-bold text-brand-700 dark:text-brand-100">30+ implementations</p>
+                <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">Odoo implementations delivered</p>
               </div>
             </div>
           </Card>
